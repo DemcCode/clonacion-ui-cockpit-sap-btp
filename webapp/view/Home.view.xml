@@ -3,6 +3,7 @@
     <tnt:ToolPage id="rootPage">
 
         <tnt:header>
+
             <tnt:ToolHeader>
                 <Button id="sideNavigationToggleButton" icon="sap-icon://menu2" type="Transparent">
                     <layoutData>
@@ -18,6 +19,7 @@
                     </layoutData>
                 </Button>
             </tnt:ToolHeader>
+            
         </tnt:header>       
 
     </tnt:ToolPage>

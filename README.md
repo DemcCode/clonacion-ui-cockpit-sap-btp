@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Application Details
 |               |
 | ------------- |
@@ -33,3 +34,6 @@ Trial Home
 1. Active NodeJS LTS (Long Term Support) version and associated supported NPM version.  (See https://nodejs.org)
 
 
+=======
+# uisap
+>>>>>>> 60c4423d81b4e3b3ae319d6d4277035ef375a61e
