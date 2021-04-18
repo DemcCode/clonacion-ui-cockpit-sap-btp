@@ -1,0 +1,27 @@
+<mvc:View controllerName="sapbtphome.sapbtphome.controller.Home" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:tnt="sap.tnt">
+
+    <tnt:ToolPage id="rootPage">
+
+        <tnt:header>
+            <tnt:ToolHeader>
+                <Button id="sideNavigationToggleButton" icon="sap-icon://menu2" type="Transparent">
+                    <layoutData>
+                        <OverflowToolbarLayoutData priority="NeverOverflow"/>
+                    </layoutData>
+                </Button>
+                <Image src="./static/img/logo.png" class="logalilogo"/>
+                <Link text="{i18n>sapBTPCockpit}" class="btpTitle"/>
+                <ToolbarSpacer/>
+                <Button text="Diego Mora" type="Transparent" icon="sap-icon://slim-arrow-down" iconFirst="false">
+                    <layoutData>
+                        <OverflowToolbarLayoutData priority="NeverOverflow"/>
+                    </layoutData>
+                </Button>
+            </tnt:ToolHeader>
+        </tnt:header>
+
+       
+
+    </tnt:ToolPage>
+
+</mvc:View>
