@@ -9,7 +9,9 @@ sap.ui.define([
 
 		return Controller.extend("sapbtphome.sapbtphome.controller.Home", {
 			onInit: function () {
-               
+				const oJSONModelBTPMenu = new sap.ui.model.json.JSONModel();
+                oJSONModelBTPMenu.loadData("./localService/mockdata/BTPMenu.json");
+                this.getView().setModel(oJSONModelBTPMenu);
 			}
 		});
 	});

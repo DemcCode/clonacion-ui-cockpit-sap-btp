@@ -18,9 +18,28 @@
                         <OverflowToolbarLayoutData priority="NeverOverflow"/>
                     </layoutData>
                 </Button>
-            </tnt:ToolHeader>
-            
-        </tnt:header>       
+            </tnt:ToolHeader>          
+
+        </tnt:header>  
+
+        <tnt:sideContent>
+            <tnt:SideNavigation expanded="true">
+                <tnt:NavigationList items="{path: '/navigation'}">
+                    <tnt:NavigationListItem text="{title}" icon="{icon}" key="{key}" items="{items}">
+                        <tnt:NavigationListItem  text="{title}" key="{key}">
+                        </tnt:NavigationListItem>
+                    </tnt:NavigationListItem>
+                </tnt:NavigationList>
+
+                <tnt:fixedItem>
+                    <tnt:NavigationList items="{path: '/fixedNavigation'}">
+                        <tnt:NavigationListItem text="{title}" icon="{icon}" key="{key}">
+                            
+                        </tnt:NavigationListItem>
+                    </tnt:NavigationList>
+                </tnt:fixedItem>
+            </tnt:SideNavigation>
+        </tnt:sideContent>     
 
     </tnt:ToolPage>
 

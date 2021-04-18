@@ -1,0 +1,73 @@
+{
+    "selectedkey":"page2",
+    "navigation":[
+        {
+            "key":"subaccounts",
+            "title":"Subaccounts",
+            "icon":"sap-icon:\/\/org-chart"
+        },
+        {
+            "key":"directories",
+            "title":"Directories",
+            "icon":"sap-icon:\/\/folder"
+        },
+        {
+            "key":"resourceProviders",
+            "title":"Resource Providers",
+            "icon":"sap-icon:\/\/curriculum"
+        },
+        {
+            "key":"boosters",
+            "title":"Boosters",
+            "icon":"sap-icon:\/\/measurement-document"
+        },
+        {
+            "key":"systemLandsacpe",
+            "title":"System Landsacpe",
+            "icon":"sap-icon:\/\/it-system",
+            "items":[
+                {
+                    "key":"systems",
+                    "title":"Systems"
+                },
+                {
+                    "key":"formations",
+                    "title":"Formations"
+                }
+            ]
+        },
+        {
+            "key":"entitlements",
+            "title":"Entity Elements",
+            "icon":"sap-icon:\/\/customer-order-entry",
+            "items":[
+                {
+                    "key":"entityAssignments",
+                    "title":"Entity Assignments"
+                },
+                {
+                    "key":"serviceAssignments",
+                    "title":"Service Assignments"
+                }
+            ]
+        },
+        {
+            "key":"usageAnalytics",
+            "title":"Usage Analytics",
+            "icon":"sap-icon:\/\/world"
+        }
+    ],
+    "fixedNavigation":[
+        {
+            "key":"usefulLinks",
+            "title":"Useful Links",
+            "icon":"sap-icon:\/\/chain-link"
+        },
+        {
+            "key":"legalInfo",
+            "title":"Legal Information",
+            "icon":"sap-icon:\/\/compare"
+        }
+    ]
+
+}
