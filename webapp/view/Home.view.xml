@@ -1,11 +1,16 @@
-<mvc:View controllerName="sapbtphome.sapbtphome.controller.Home" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:tnt="sap.tnt">
+<mvc:View controllerName="sapbtphome.sapbtphome.controller.Home" 
+    xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" 
+    xmlns:layout="sap.ui.layout" 
+    displayBlock="true" 
+    xmlns="sap.m" 
+    xmlns:tnt="sap.tnt"
+    class="sapUiSizeCompact">
 
     <tnt:ToolPage id="rootPage">
 
         <tnt:header>
-
             <tnt:ToolHeader>
-                <Button id="sideNavigationToggleButton" icon="sap-icon://menu2" type="Transparent">
+                <Button id="sideNavigationToggleButton" icon="sap-icon://menu2" type="Transparent" press="onSideNavButtonPress">
                     <layoutData>
                         <OverflowToolbarLayoutData priority="NeverOverflow"/>
                     </layoutData>
@@ -18,8 +23,7 @@
                         <OverflowToolbarLayoutData priority="NeverOverflow"/>
                     </layoutData>
                 </Button>
-            </tnt:ToolHeader>          
-
+            </tnt:ToolHeader>   
         </tnt:header>  
 
         <tnt:sideContent>
@@ -41,6 +45,96 @@
             </tnt:SideNavigation>
         </tnt:sideContent>     
 
+        <tnt:mainContents>
+            <NavContainer id="pageContainer"> 
+                <pages>
+                    <VBox width="100%" height="100%">
+                        <HBox renderType="Bare" class="breadCrumbContainer">
+                            <HBox>
+                                <HBox alignContent="Center" renderType="Bare">
+                                    <core:Icon src="sap-icon://home"/>
+                                    <Link text="{i18n>trialHome}" class="breadCrumbDivider"/>
+                                    <Text text="/" class="breadCrumbDivider fontSize"/>
+                                </HBox>
+                                 <HBox alignContent="Center" renderType="Bare">
+                                    <core:Icon src="sap-icon://world"/>
+                                    <Link text="{i18n>globalAccount}" class="breadCrumbDivider"/>
+                                </HBox>                                 
+                            </HBox> 
+                            <ToolbarSpacer/>
+                            <HBox alignContent="Center" renderType="Bare">
+                                <core:Icon src="sap-icon://action-settings" class="sapUiSmallMarginEnd"/>
+                            </HBox>
+                        </HBox>
+                        
+                        <layout:VerticalLayout width="100%" class="headPage">
+                            <Toolbar class="noBorderToolbar">
+                                <Title titleStyle="H3" text="{i18n>globalAccountText}: {i18n>globalAccount} - {i18n>subaccountsText}"/>
+                            </Toolbar>
+                            <Toolbar class="noBorderToolbar">
+                                <Label text="{i18n>subdomainText}: {i18n>globalAccount}-{i18n>gaText}"/>
+                            </Toolbar>
+                            <Toolbar class="noBorderToolbar">
+                                <Label text="{i18n>allText}: 1"/>
+                            </Toolbar>                            
+                            <OverflowToolbar class="noBorderOverflowToolbar">
+                                <Button type="Emphasized" text="{i18n>newSubaccountText}"/>
+                                <Button type="Emphasized" text="{i18n>switchGlobalAccountText}"/>
+                                <Button type="Emphasized" text="{i18n>deleteTrialAccountText}"/>
+                                <ToolbarSpacer/>
+                                <Select >
+                                    <items>
+                                        <core:Item key="1" text="{i18n>allEnviroments}"/>
+                                        <core:Item key="2" text="{i18n>multiEnviroment}"/>
+                                    </items>
+                                </Select>
+                                <Select >
+                                    <items>
+                                        <core:Item key="1" text="{i18n>allDataCenters}"/>
+                                        <core:Item key="2" text="{i18n>usEastAWS}"/>
+                                    </items>
+                                </Select>
+                                <SearchField placeholder="{i18n>serachSubaccounts}" showSearchButton="true" width="15rem"/>
+                            </OverflowToolbar>   
+                        </layout:VerticalLayout>  
+
+                        <layout:BlockLayout background="Default">
+                            <layout:BlockLayoutRow>
+                                 <layout:BlockLayoutCell>
+                                    <HBox >
+                                        <VBox class="tileContainerBorder tileContainerBackground sapUiSmallMargin">
+                                            <Toolbar class="noBorderToolbar">
+                                                <core:Icon src="sap-icon://org-chart" class="iconTrial"/>
+                                                <Link text="{i18n>subAccountName}" class="trialLink"/>
+                                            </Toolbar>
+                                            <FlexBox wrap="Wrap" alignItems="Center" renderType="Bare" class="tileContainerFlexBox">
+                                            <Label text="{i18n>provider}"/>
+                                            <Text text="{i18n>amazoWebServices}"/>
+                                            <Label text="{i18n>regionText}"/>
+                                            <Image src="./static/img/United-States.png"/>
+                                            <Text text="{i18n>region}"/>
+                                            <Label text="{i18n>descriptionText}"/>
+                                            <Text text="{i18n>description}"/>
+                                            <Label text="{i18n>environmentText}"/>
+                                            <Text text="{i18n>multiEnvironment}"/>                                            
+                                            </FlexBox>
+                                            <Toolbar class="noBorderToolbar">
+                                                <Button type="Transparent" icon="sap-icon://edit"/>
+                                                <Button type="Transparent" icon="sap-icon://message-information"/>
+                                                <Button type="Transparent" icon="sap-icon://delete"/>
+                                            </Toolbar>
+                                        </VBox>
+                                    </HBox>
+                                 </layout:BlockLayoutCell>
+                            </layout:BlockLayoutRow> 
+                        </layout:BlockLayout>
+                        <VBox alignItems="Center" class="sapUiSmallmarginTop sapUiSmallMarginBottom">
+                            <Text text="{i18n>learnText}"/>
+                        </VBox>      
+                    </VBox>                    
+                </pages>
+            </NavContainer>       
+        </tnt:mainContents>
     </tnt:ToolPage>
 
 </mvc:View>

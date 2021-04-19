@@ -11,3 +11,79 @@
     text-shadow: none !important;
     text-decoration: none !important;
 }
+
+.breadCrumbContainer {
+    padding-left: 1rem;
+    height: 44px;
+    overflow-x: hidden;
+    border-bottom: 1px solid #e5e5e5e5;
+    background: #fff;
+}
+
+.breadCrumbDivider {
+    font-size: 14px;
+    margin-left: 10px;
+    color: #d9d9d9;
+    margin-right: 10px;
+}
+
+.breadCrumbDivider.fontSize {
+    font-size: 25px;
+}
+
+.headPage {
+    padding: 1rem;
+    background-color: #ffffff;
+}
+
+.noBorderToolbar {
+    border-bottom: none;
+    height: 30px;
+    margin-bottom: 0.5rem;
+}
+
+.noBorderOverflowToolbar{
+    border-bottom: none;
+}
+
+.tileContainerBackground {
+    background-color: #fff;
+    height: 215px !important;
+    width: 375px !important;
+}
+
+.tileContainerBorder{
+    border: 1px solid transparent;
+    box-shadow: 0 0 0 0.0625rem rgb(0 0 0 / 10%), 0 0.125rem 0 rgb(0 0 0 / 10%);
+    box-sizing: border-box;
+    border-radius: 0.25rem;
+}
+
+.tileContainerFlexBox {
+    height: 150px;
+}
+
+.tileContainerFlexBox > .sapMLabel {
+    width: 28%;
+    padding: 4px 12px 1px 4px;
+    text-align: end !important;
+
+}
+
+.tileContainerFlexBox > .sapMText {
+    width: 57%;
+    padding: 4px 4px 4px 4px;   
+}
+
+.tileContainerFlexBox > .sapMLabel:after {
+    content: ":";
+}
+
+.tileContainerBorder span{
+    font-size: 12pt;
+}
+
+.iconTrial, .trialLink{
+    font-size: 18px;
+}
+

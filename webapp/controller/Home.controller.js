@@ -12,6 +12,11 @@ sap.ui.define([
 				const oJSONModelBTPMenu = new sap.ui.model.json.JSONModel();
                 oJSONModelBTPMenu.loadData("./localService/mockdata/BTPMenu.json");
                 this.getView().setModel(oJSONModelBTPMenu);
+			},
+
+			onSideNavButtonPress: function() {
+				const oRootPage = this.getView().byId("rootPage");				
+				oRootPage.setSideExpanded(!oRootPage.getSideExpanded());
 			}
 		});
 	});
